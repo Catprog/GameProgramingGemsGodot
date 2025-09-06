@@ -1,0 +1,81 @@
+[gd_scene load_steps=5 format=3 uid="uid://oinwjywau582"]
+
+[ext_resource type="Script" uid="uid://cak1134w3tmfl" path="res://galaxy_display.gd" id="1_ksisf"]
+[ext_resource type="Texture2D" uid="uid://od78mx8jyi24" path="res://space.png" id="1_ol24e"]
+[ext_resource type="Texture2D" uid="uid://603demxkoglb" path="res://icon.svg" id="1_onkyh"]
+[ext_resource type="Texture2D" uid="uid://t2hv2p6ovmgr" path="res://square.png" id="4_tcg2k"]
+
+[node name="Universe" type="Control"]
+layout_mode = 3
+anchor_right = 0.619
+anchor_bottom = 0.614
+offset_right = 509.912
+offset_bottom = 309.128
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GalaxyDisplay" type="TextureRect" parent="." node_paths=PackedStringArray("xLabel", "yLabel", "nameLabel", "planetCntLabel", "zoomedNode")]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 50.0
+offset_right = 562.0
+offset_bottom = 562.0
+texture = ExtResource("1_ol24e")
+stretch_mode = 5
+script = ExtResource("1_ksisf")
+xLabel = NodePath("../XLabel")
+yLabel = NodePath("../YLabel")
+nameLabel = NodePath("../SystemName")
+planetCntLabel = NodePath("../PlanetCount")
+zoomedNode = NodePath("../ZoomedDisplay")
+
+[node name="TextureRect" type="TextureRect" parent="GalaxyDisplay"]
+layout_mode = 0
+offset_left = 245.0
+offset_top = 245.0
+offset_right = 267.0
+offset_bottom = 267.0
+texture = ExtResource("4_tcg2k")
+
+[node name="XLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 58.0
+offset_top = 59.0
+offset_right = 98.0
+offset_bottom = 82.0
+
+[node name="YLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 58.0
+offset_top = 93.0
+offset_right = 98.0
+offset_bottom = 116.0
+
+[node name="SystemName" type="Label" parent="."]
+layout_mode = 0
+offset_left = 783.0
+offset_top = 442.0
+offset_right = 959.0
+offset_bottom = 465.0
+
+[node name="PlanetCount" type="Label" parent="."]
+layout_mode = 0
+offset_left = 783.0
+offset_top = 462.0
+offset_right = 959.0
+offset_bottom = 485.0
+
+[node name="ZoomedDisplay" type="TextureRect" parent="."]
+offset_left = 760.0
+offset_top = 153.0
+offset_right = 1016.0
+offset_bottom = 409.0
+texture = ExtResource("1_onkyh")
+stretch_mode = 5
+
+[node name="TextureRect" type="TextureRect" parent="ZoomedDisplay"]
+offset_left = 117.0
+offset_top = 117.0
+offset_right = 139.0
+offset_bottom = 139.0
+texture = ExtResource("4_tcg2k")
