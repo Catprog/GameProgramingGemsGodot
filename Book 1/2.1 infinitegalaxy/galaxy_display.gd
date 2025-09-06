@@ -37,15 +37,7 @@ func _ready():
 	)
 		
 	
-	
-	
-	var black = Color(0.0,0.0,0.0,1)
-	var white = Color(1.0,1.0,1.0,1)
-	var grey = Color(0.5,0.5,0.5,1)
-	var red = Color(1,0,0,1)
-	
-	
-	_galImage.fill(black)
+	_galImage.fill(Color(0.0,0.0,0.0,1))
 	
 	print('image made')
 	
@@ -57,7 +49,7 @@ func _ready():
 				#Use an offset to move the target system into the middle of the screen
 			
 			if( _Galaxy.isStar(xStar,yStar) ):
-				
+								
 				var system = _Galaxy.systemDetails(xStar,yStar)
 								
 				_galImage.set_pixel(x,y, system.Color())

@@ -66,6 +66,7 @@ offset_right = 959.0
 offset_bottom = 485.0
 
 [node name="ZoomedDisplay" type="TextureRect" parent="."]
+layout_mode = 0
 offset_left = 760.0
 offset_top = 153.0
 offset_right = 1016.0
@@ -74,6 +75,7 @@ texture = ExtResource("1_onkyh")
 stretch_mode = 5
 
 [node name="TextureRect" type="TextureRect" parent="ZoomedDisplay"]
+layout_mode = 0
 offset_left = 117.0
 offset_top = 117.0
 offset_right = 139.0

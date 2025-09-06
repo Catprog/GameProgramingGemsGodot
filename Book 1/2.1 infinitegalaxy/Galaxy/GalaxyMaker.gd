@@ -42,7 +42,6 @@ func makeGalaxy():
 			if ( result < 0.01):
 				self._galaxyStars[x].append(y)
 			
-		
 	
 	
 func remapCord(cord, type ):
