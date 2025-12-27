@@ -1,0 +1,10 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1766734126
+display.gd::GDScript::169865618658129555::1766734124::0::1::::<>Node2D<><>0<>0<><>::
+Display.tscn::PackedScene::5031940173096997131::1766734126::0::1::::<><><>0<>0<><>::uid://cojwrgfxstx0::::res://display.gd
+icon.svg::CompressedTexture2D::6721647093542439280::1760672433::1766721623::1::::<><><>0<>0<>91f478f3fa17060e8376492209c7650e<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://FuzzyClass/::1766792785
+font.bmp::CompressedTexture2D::6660043519963489670::1766792750::1766792834::1::::<><><>0<>0<>3207cb119ad88e753a2e6488f354995f<>res://.godot/imported/font.bmp-06a82d8a5a07500e6e8e4afc2b0a632c.ctex::
+font.png::CompressedTexture2D::5902115308001890338::1766792717::1766792834::1::::<><><>0<>0<>67cb028744060f90f79a6a1e3d728266<>res://.godot/imported/font.png-97a9da3f65df5c3946e6c9ec1b609c6f.ctex::
+fuzzyClass.gd::GDScript::6240955902483735959::1766731764::0::1::::<>Node<><>0<>0<><>::
+DrawTextOnImage.gd::GDScript::4263517645920218309::1766730502::0::1::::<>Node<><>0<>0<><>::
